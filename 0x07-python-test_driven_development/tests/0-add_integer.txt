@@ -1,0 +1,44 @@
+=========
+Usage
+=========
+
+A test for adding integers.
+If a float is entered, it should be converted to int
+  this will in turn remove any precision (desired effect in this case)
+
+    >>> add_int = __import__('0-add_integer').add_integer
+
+Test for int:
+    >>> add_int(2,4)
+    6
+
+Test for float (for a):
+    >>> add_int(2.6, 5)
+    7
+
+Test for float (for b):
+    >>> add_int(7, 4.7)
+    11
+
+Test for non-int (for a):
+    >>> add_int('a', 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test for non-int (for b):
+    >>> add_int(4, 't')
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+Test for one value entered:
+    >>> add_int(20)
+    118
+
+Test for one value entered (non-int):
+    >>> add_int('w')
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test for float value:
+    >>> add_int(23.45)
+    121
