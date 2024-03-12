@@ -2,6 +2,6 @@
 
 Writing those sweet database tables:
 
-``sql
+```sql
 SELECT * FROM users;
 ```
